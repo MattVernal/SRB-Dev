@@ -1,0 +1,233 @@
+* {
+    box-sizing: border-box;
+    margin: 0;   
+}
+
+html, body {
+    height: 100%;
+    background-color:#3b414f;
+}
+body{
+    overflow-x: hidden;
+
+}
+.hide{
+    display:none;
+}
+
+/*landing section*/
+#landing {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background: url('../img/976438_4127838694748_1037556989_o.jpg') no-repeat 56% 50%;
+    background-size: cover;
+    z-index: 1;
+}
+#video-container {
+    overflow-x: hidden;
+    overflow-y: hidden;
+    position: relative;
+    /*    display: none;*/
+    height: 100vh;
+    width: auto;
+}
+
+#landing-video {
+    /*    overflow-x: hidden;*/
+    position: absolute;
+    min-height: 100%;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    width: auto;
+}
+
+.imperative-container {
+    width: 100%;
+    position: absolute;
+    top: 10%;    
+    left: 50%;
+    -webkit-transform: translate(-50%, 0);
+    transform: translate(-50%, 0);
+    text-align: center;
+}
+
+.main__heading {
+    font-family: Gloria Hallelujah, sans-serif;
+    font-size: 120px;
+    color: white;
+}
+#unsupportedMessage{
+    margin-top: 20px;
+    color:white;
+    font-size:30px;
+
+}
+.chevron__container{
+    text-align: center;
+    z-index: 3;
+    display:block;
+    position: absolute;
+    bottom:0;
+    margin: 0;
+    width:100%;
+}
+.exploreImperative{
+    font-family: roboto;
+    color: white;
+}
+#chevron{
+    color: white;
+    height: 30px;
+    width: 30px;
+}
+
+/*Content*************************/
+.page-section {  
+    display: -webkit-box;  
+    display: -ms-flexbox;  
+    display: flex;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    height: 100vh;
+    width:100vw;
+}
+.heading_container{
+    width: 100%;
+    position: absolute;
+    text-align: center;
+}
+/*Navbar*/
+.navbar-default .navbar-nav > li > a{
+    color:white;
+}
+.navbar-default .navbar-nav > li > a{
+    color:white;
+}
+#nav{    
+    border:none;
+    width:100%;
+    background-color:#3b414f;
+    position:absolute;
+    z-index:3;  
+}
+.nav_button{    
+    font-family: roboto, sans serif;
+    font-size: 20px;
+}
+#nav_button__active{    
+    font-family: roboto, sans serif;
+    font-size: 20px;
+    color: #e20613;
+}
+
+/*Map*/
+#media__container{
+    display:-webkit-box;
+    display:-ms-flexbox;
+    display:flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    text-align: center;
+    width: 65%;
+    height: auto;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: stretch;
+    -ms-flex-align: stretch;
+    align-items: stretch;
+
+}
+#runSelector__container{
+    width: 100%;
+    height: 40vh;
+}
+#runSelector{   
+    width: 100%;
+    height: 100%;
+
+}
+#selection__heading{
+    font-family: Gloria Hallelujah, sans-serif;
+    font-size: 100px;
+    color: white;
+
+}
+
+
+/*video*/
+#playerContainer{
+    background: url("../img/placeholder/videoplachold.png") no-repeat center center;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    margin: 10px 0 10px 0;
+    max-height: 40vh;
+    height: 100%;
+    overflow: hidden;
+}
+#video{
+    position: relative;
+    background-color: black;
+    width: 100%;
+    max-width: auto;
+    height: 100%; 
+    max-height: 40vh;
+    z-index: 2;
+}
+/*MediaQueries********************/
+
+@media (max-width: 1280px) {
+    #loading-image {
+        width: 100%;
+    }
+    .main__heading {
+        font-size: 80px;
+    }
+    #selection__heading{
+        font-size: 60px;
+    }
+}
+@media (max-width: 800px) {        
+    #landing-video {
+        display: none;
+    }
+    .main__heading{
+        font-size:60px;
+    }
+    #selection__heading{
+        font-size: 40px;
+    }
+}
+@media (max-width: 900px){
+    .nav_button{    
+        font-size: 15px;
+    }
+    #nav_button__active{ 
+        font-size: 15px;
+    }
+    #infoWindow{
+        font-size: 15px
+    }
+    #infoWindow_heading{
+        font-size: 15px
+    }
+} 
+@media (max-width:400px){
+    #infoWindow{
+        font-size: 10px
+    }
+    #infoWindow_heading{
+        font-size: 10px
+    }
+
+
+}

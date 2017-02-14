@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>SickRunBro : Share Your World</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- ****** faviconit.com favicons ****** -->
+        <link rel="shortcut icon" href="/favicon.ico">
+        <link rel="icon" sizes="16x16 32x32 64x64" href="/favicon.ico">
+        <link rel="icon" type="image/png" sizes="196x196" href="img/favicons/favicon-192.png">
+        <link rel="icon" type="image/png" sizes="160x160" href="img/favicons/favicon-160.png">
+        <link rel="icon" type="image/png" sizes="96x96" href="img/favicons/favicon-96.png">
+        <link rel="icon" type="image/png" sizes="64x64" href="img/favicons/favicon-64.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="img/favicons/favicon-32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="img/favicons/favicon-16.png">
+        <link rel="apple-touch-icon" href="/favicon-57.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="img/favicons/favicon-114.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="img/favicons/favicon-72.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="img/favicons/favicon-144.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="img/favicons/favicon-60.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="img/favicons/favicon-120.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="img/favicons/favicon-76.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="img/favicons/favicon-152.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/favicon-180.png">
+        <meta name="msapplication-TileColor" content="#FFFFFF">
+        <meta name="msapplication-TileImage" content="/favicon-144.png">
+        <meta name="msapplication-config" content="/browserconfig.xml">
+        <!-- ****** faviconit.com favicons ****** -->
+        <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+        <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah|Roboto|Roboto+Condensed" rel="stylesheet">
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="css/main.css">
+    </head>
+    <body>
+        <nav class="navbar navbar-default navbar-static-top" id="nav">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand navbar-left"><img class='img-responsive' src="img/sickrunbro-white.png" alt='sickrunbro logo'></a>
+                </div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav">
+                        <li><a  id="nav_button__active" href="#">Home</a></li>
+                        <li><a class="nav_button">Browse</a></li>
+                        <li><a class="nav_button"><span class="glyphicon glyphicon-upload"></span>Upload</a></li>
+                        <li><a class="nav_button">Community</a></li>                       
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="#" class='nav_button' ><span class="glyphicon glyphicon-user"></span>Sign Up</a></li>
+                        <li><a href="#" class='nav_button' ><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div>
+            <section id="landing">
+                <div id="video-container">
+                    <video id="landing-video" autoplay="" loop="" muted>
+                         <source src="video/promo.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+                <div class="imperative-container">
+                     <p id="unsupportedMessage"></p>
+                    <h1 class="main__heading">share your world!</h1>                   
+                </div>
+                <div class="chevron__container">
+                    <a><img id="chevron" src="img/doubledownchevron.svg" alt="Down Arrow"/>
+                        <h3 class="exploreImperative">Explore</h3></a>
+                </div>
+            </section>
+            <section class="page-section">
+                <div  id="media__container">
+                    <h1 id="selection__heading">choose a run!</h1>
+                    <div id='runSelector__container'>
+                        <div id='runSelector'></div>
+                    </div>
+                    <div  id="playerContainer">
+                        <video id="video" controls="" poster="img/placeholder/videoplachold.png">                            
+                            <source id="source" src="" type="video/webm">
+                        </video>
+                    </div>
+                </div>
+            </section>
+        </div>        
+        <script src="js/main.js"></script>        
+        <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC-mfaSXKo-3pEGEXQ375-AGQXTKOXuRHM&callback=initMap"></script>
+    </body>
+</html>
